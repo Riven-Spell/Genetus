@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/adele/CLionProjects/genetus/src/Population.cpp" "/home/adele/CLionProjects/genetus/cmake-build-debug/CMakeFiles/genetus.dir/src/Population.cpp.o"
-  "/home/adele/CLionProjects/genetus/src/Rule.cpp" "/home/adele/CLionProjects/genetus/cmake-build-debug/CMakeFiles/genetus.dir/src/Rule.cpp.o"
+  "/home/adele/CLionProjects/genetus/src/Population.cpp" "/home/adele/CLionProjects/genetus/CMakeFiles/genetus.dir/src/Population.cpp.o"
+  "/home/adele/CLionProjects/genetus/src/Rule.cpp" "/home/adele/CLionProjects/genetus/CMakeFiles/genetus.dir/src/Rule.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
