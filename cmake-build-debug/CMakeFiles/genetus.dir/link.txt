@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgenetus.so -o libgenetus.so CMakeFiles/genetus.dir/library.cpp.o 
