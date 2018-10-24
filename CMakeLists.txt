@@ -3,4 +3,4 @@ project(genetus)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_library(genetus SHARED includes/Genetus.h includes/Populant.h src/Population.cpp includes/Population.h src/Rule.cpp includes/Rule.h)
+add_library(genetus SHARED includes/Genetus.h src/Population.cpp includes/Population.h src/Rule.cpp includes/Rule.h)

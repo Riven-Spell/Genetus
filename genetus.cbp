@@ -69,9 +69,6 @@
 		<Unit filename="/home/adele/CLionProjects/genetus/includes/Genetus.h">
 			<Option target="genetus"/>
 		</Unit>
-		<Unit filename="/home/adele/CLionProjects/genetus/includes/Populant.h">
-			<Option target="genetus"/>
-		</Unit>
 		<Unit filename="/home/adele/CLionProjects/genetus/includes/Population.h">
 			<Option target="genetus"/>
 		</Unit>
