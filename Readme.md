@@ -1,4 +1,4 @@
-#Genetus
+# Genetus
 
 Genetus is a open-source library designed to act as a basis for Genetic Algorithms. So long as you can provide randomization and scoring, Genetus does the rest for you.
 
