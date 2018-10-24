@@ -26,9 +26,16 @@ bool sortByScore(Populant * i, Populant * j) {
     return i->Score() > j->Score();
 }
 
+bool sortByScoreDesc(Populant * i, Populant * j) {
+    return i->Score() < j->Score();
+}
+
 template<class T>
-std::vector<T*> Population<T>::Top(int x) {
-    std::sort(Populants->begin(), Populants->end(), sortByScore);
+std::vector<T*> Population<T>::Top(int x, bool asc) {
+    if(asc)
+        std::sort(Populants->begin(), Populants->end(), sortByScore);
+    else
+        std::sort(Populants->begin(), Populants->end(), sortByScoreDesc);
     auto * output = new std::vector<Populant>();
     std::copy_n(Populants, x, output->begin());
     return output;

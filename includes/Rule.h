@@ -10,7 +10,7 @@
 
 class Rule {
 public:
-    Rule(Population<Populant> base, int iterations = 0, int popsize = 0, int fittest = 0, int result = 0, int children = 0);
+    Rule(Population<Populant> base, int iterations = 0, int popsize = 0, int fittest = 0, int result = 0, int children = 0, bool ascending = true);
     Rule(Population<Populant> base);
     Population<Populant> Execute();
 
@@ -20,6 +20,7 @@ public:
     int popSize;
     int numIterations;
     int resultSize;
+    bool isAscending;
 };
 
 

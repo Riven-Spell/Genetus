@@ -14,7 +14,7 @@ public:
     Population(Population<T> first, Population<T> second); //Combine populations
     explicit Population(std::vector<T*> population);
     std::vector<T*> * Populants;
-    std::vector<T*> Top(int x);
+    std::vector<T*> Top(int x, bool asc);
 };
 
 

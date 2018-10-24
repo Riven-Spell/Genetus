@@ -10,7 +10,7 @@ Rule::Rule(Population<Populant> base)
     activePopulation = base;
 }
 
-Rule::Rule(Population<Populant> base, int iterations, int popsize, int fittest, int result, int children)
+Rule::Rule(Population<Populant> base, int iterations, int popsize, int fittest, int result, int children, bool ascending)
 {
     activePopulation = base;
     numIterations = iterations;
@@ -18,13 +18,14 @@ Rule::Rule(Population<Populant> base, int iterations, int popsize, int fittest, 
     numFittest = fittest;
     resultSize = result;
     numChildren = children;
+    isAscending = ascending;
 }
 
 Population<Populant> Rule::Execute()
 {
     for(int iterations = numIterations; iterations > 0; iterations--)
     {
-        std::vector<Populant*> basePop = activePopulation.Top(numFittest);
+        std::vector<Populant*> basePop = activePopulation.Top(numFittest, isAscending);
         auto newPop = Population<Populant>();
         for(int child = 1; child <= numChildren; child++)
         {
@@ -36,5 +37,5 @@ Population<Populant> Rule::Execute()
         activePopulation = *new Population<Populant>(newPop, *new Population<Populant>(basePop));
     }
 
-    return *new Population<Populant>(activePopulation.Top(resultSize));
+    return *new Population<Populant>(activePopulation.Top(resultSize, isAscending));
 }
