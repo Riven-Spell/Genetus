@@ -1,3 +1,0 @@
-/home/adele/CLionProjects/genetus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/adele/CLionProjects/genetus/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/adele/CLionProjects/genetus/cmake-build-debug/CMakeFiles/genetus.dir
