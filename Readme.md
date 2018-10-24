@@ -6,3 +6,7 @@ Genetus follows a general format for genetic algorithms.
 1. A fully random population of size X is generated.
 2. The top Y members of this population are used to create Z "offspring" (slight alterations). X-Z remaining fully random members are created to fill the second population. The top Y members are included in this population, in case evolution goes backwards.
 3. The cycle of step 2 repeats A times with the populations produced from the last iteration of step 2. The best B overall results are handed off. 
+
+This process is referred to as _salting_ to me. It retains the most effective of the population and encourages growth.
+
+Once a `Populant` has been implemented, use it to create a `Population`, and hand the `Population` off to a `Rule`. Establish the required portions of a `Rule`, and `Execute` it.
