@@ -10,3 +10,7 @@ Genetus follows a general format for genetic algorithms.
 This process is referred to as _salting_ to me. It retains the most effective of the population and encourages growth.
 
 Once a `Populant` has been implemented, use it to create a `Population`, and hand the `Population` off to a `Rule`. Establish the required portions of a `Rule`, and `Execute` it.
+
+You can view the documentation mind map in the IntelliJ mind map plugin or in the image below.
+
+![Mind Map](https://raw.githubusercontent.com/Virepri/Genetus/master/MindMap.png?token=ANP7Mpv0jTfUO2ndkCgJ9c-wbCMavangks5b2VHZwA%3D%3D)
